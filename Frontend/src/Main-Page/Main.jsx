@@ -14,7 +14,7 @@ const Main = () => {
   const navigate = useNavigate();
   const fetch=async()=>{
   try {
-    const response = await axios.get("http://localhost:8080/api/v1/document/documentbyid" , {withCredentials:true});
+    const response = await axios.get("/api/v1/document/documentbyid" , {withCredentials:true});
     if(response.data.success===false){
       useDispatch(authactions.logout());
       alert(response.data.message);
