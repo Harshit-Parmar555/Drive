@@ -12,7 +12,7 @@ const _dirname = path.resolve()
 
 
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: "https://drive-dlqq.onrender.com",
   credentials:true
 }));
 app.use(express.json());
