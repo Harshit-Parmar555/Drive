@@ -16,7 +16,7 @@ const Register = () => {
     try {
       setloading(true);
       const response = await axios.post(
-        "http://localhost:8080/api/v1/user/userregister",
+        "https://drive-dlqq.onrender.com/api/v1/user/userregister",
         { username: data.username, email: data.email, password: data.password }
       );
       if (response.data.success === true) {
