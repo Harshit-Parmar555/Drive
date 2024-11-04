@@ -7,7 +7,7 @@ const Document = (props) => {
   const handledelte = async () => {
     setloading(true);
     const response = await axios.delete(
-      `http://localhost:8080/api/v1/document/deletedocument/${props.id}`,
+      `/api/v1/document/deletedocument/${props.id}`,
       { withCredentials: true }
     );
     if (response.data.success === true) {

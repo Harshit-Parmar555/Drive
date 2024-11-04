@@ -31,7 +31,7 @@ const Add = () => {
     setloading(true);
     e.preventDefault();
     const response = await axios.post(
-      "http://localhost:8080/api/v1/document/adddocument",
+      "/api/v1/document/adddocument",
       { filename: filename, filepath: file.name },
       { withCredentials: true }
     );
