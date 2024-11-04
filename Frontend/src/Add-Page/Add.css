@@ -1,0 +1,74 @@
+@keyframes onload {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.Add-Page-Container {
+  height: 88vh;
+  width: 100vw;
+  background-color: #0b132b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Add-Page-Container-Form {
+  height: 40%;
+  width: 25%;
+  background-color: black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: onload 1s;
+}
+.Add-Page-Container-Form > form {
+  height: 90%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Add-Page-Container-Form > form > input {
+  width: 100%;
+  height: 15%;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10%;
+  background-color: white;
+  text-align: center;
+}
+.Add-Page-Container-Form > form > button {
+  margin-top: 10%;
+  padding: 10px;
+  font-family: "poppins", Arial, Helvetica, sans-serif;
+  border: none;
+  border-radius: 10px;
+}
+.Back-Btn {
+  position: absolute;
+  top: 14vh;
+  left: 2vh;
+  width: 100%;
+}
+.Back-Btn > button {
+  background-color: white;
+  font-size: 20px;
+  border: none;
+  padding: 1%;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .Add-Page-Container-Form {
+    width: 90%;
+  }
+  .Back-Btn>button{
+    background-color: white;
+    font-size: 20px;
+    border: none;
+    padding: 2%;
+    border-radius: 10px;
+  }
+}

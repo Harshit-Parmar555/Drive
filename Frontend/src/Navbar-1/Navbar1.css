@@ -1,0 +1,41 @@
+.Navbar-1 {
+  height: 12vh;
+  width: 100vw;
+  background-color: #1b263b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Navbar-1-Logo {
+  font-family: "Itim", Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  margin-left: 3%;
+  color: #e0e1dd;
+}
+.Navbar-1-Options {
+  margin-right: 10%;
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+.Navbar-1-Options > button {
+  padding: 18px;
+  border: none;
+  border-radius: 15px;
+  background-color: #0b132b;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .Navbar-1-Logo{
+    font-size: 18px;
+  }
+  .Navbar-1-Options {
+    margin-right: 0;
+    width: 40%;
+  }
+  .Navbar-1-Options > button{
+    padding: 10px;
+    margin-right: 2%;
+  }
+}

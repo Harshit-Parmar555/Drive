@@ -1,0 +1,66 @@
+@keyframes onload {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.Login-Page-Container {
+  height: 88vh;
+  width: 100vw;
+  background-color: #0b132b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Login-Page-Container-Form {
+  height: 50%;
+  width: 25%;
+  background-color: black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: onload 1s;
+}
+.Login-Page-Container-Form > h2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  margin-top: 5%;
+  color: white;
+}
+.Login-Page-Container-Form > form {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Login-Page-Container-Form > form > input {
+  display: block;
+  width: 100%;
+  height: 15%;
+  margin-top: 10%;
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+.Login-Page-Container-Form > form > button {
+  padding: 10px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10%;
+  background-color: white;
+  filter: drop-shadow(0 0 0.25rem white);
+}
+
+@media only screen and (max-width: 600px) {
+  .Login-Page-Container-Form{
+    width: 90%;
+  }
+  
+}

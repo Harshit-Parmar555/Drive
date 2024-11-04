@@ -1,0 +1,56 @@
+@keyframes onload {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.Main-Page-Container {
+  height: 88vh;
+  width: 100vw;
+  background-color: #0b132b;
+  display: flex;
+  justify-content: center;
+}
+.Main-Page-Container-Box {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  animation: onload 1s;
+}
+.Upload-Button {
+  height: 20%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.Upload-Button > button {
+  padding: 5%;
+  font-size: 20px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  border: none;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .Main-Page-Container-Box {
+    width: 90%;
+  }
+
+  .Upload-Button > button{
+    padding: 10%;
+  }
+  .Upload-Button {
+     width: 30vw;
+  }
+}
+

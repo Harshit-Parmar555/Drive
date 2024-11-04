@@ -1,0 +1,26 @@
+.Navbar-2 {
+  height: 12vh;
+  width: 100vw;
+  background-color: #1b263b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Navbar-2-Logo {
+  font-family: "Itim", Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  margin-left: 3%;
+  color: #e0e1dd;
+}
+.Navbar-2-Option {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5%;
+}
+.Navbar-2-Option > button {
+  padding: 18px;
+  border: none;
+  border-radius: 15px;
+  background-color: #0b132b;
+  color: white;
+}
